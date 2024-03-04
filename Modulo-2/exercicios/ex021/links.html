@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        a{
+            color: brown;
+            text-decoration: none;
+        }
+
+        a:visited{/*pseudo-classe*/
+            color: rgb(104, 31, 172);
+        }
+
+        a:hover{/*pseudo-classe*/
+            text-decoration: underline;
+        }
+
+        a::after{ /*pseudo-elemento*/
+	        content: ' [link]';
+	        text-decoration: none;
+	        font-weight: normal;
+	        color: darkgray;
+        }
+        
+        .especial::before{
+            content: '->';
+        }
+
+        .especial::after{
+            content: '<-'
+        }
+
+        .especial{
+            background-color: rgb(47, 167, 127);
+        }
+
+       
+       
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/nathanMonteiro00" target="_blank" rel="external" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com" target="_blank" rel="external"> Site do Youtube</a></li>
+        <li><a href="https://judge.beecrowd.com/pt/login?redirect=%2Fpt%2Fproblems%2Fview%2F3455" target="_blank" rel="external">Site do Beecrowd</a></li>
+    </ul>
+</body>
+</html>

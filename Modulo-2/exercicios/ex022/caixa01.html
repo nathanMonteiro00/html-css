@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+
+        h1{
+            background-color: antiquewhite;
+            height: 100px;
+            width: 300px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 30px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            text-align: center;
+            background-image: linear-gradient(to right, rgb(68, 189, 245), rgb(4, 105, 145));
+        }
+
+        body{
+            background-image: radial-gradient(circle, rgb(208, 245, 141), rgb(0, 0, 0));
+        }
+
+        p{
+            font: italic bold 16px Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(230, 230, 230)
+        }
+
+        div{
+            margin: 50px auto 50px 279px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: aliceblue;
+            display: inline-block;
+        }
+
+        .Tvideo{
+            padding: 70px 30px 30px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#"></a> links são exemplos de caixas inline-level.</p>
+    <h1 class="Tvideo">Vídeo do youtube</h1>
+    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</body>
+</html>

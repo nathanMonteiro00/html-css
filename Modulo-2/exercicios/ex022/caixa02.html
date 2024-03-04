@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: rgb(156, 156, 156);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header{
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav{
+            background-color: grey;
+            margin: 10px;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.568);
+            padding: 10px;
+        }
+
+        nav > a{
+            background-color: rgb(104, 118, 131);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 2px 20px 2px 20px;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.568);
+        }
+
+        nav a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer{
+            background-color: black;
+            text-align: center;
+            color: red;
+            padding: 1px;
+            margin: 10px;
+        }
+
+        #assuntos{
+            font-weight: bold;
+        }
+
+        #noticias{
+            background-color: lightgray;
+            padding:10px;
+            box-shadow: 0px 1px 5px black;
+        }
+
+        #noticias > article > h2{
+            color: red;
+        }
+
+        #empresa > a{
+            text-decoration: none;
+            color: red;
+        }
+
+        #empresa > a:hover{
+            color: yellow;
+        }
+
+        #escritor{
+            background-color: rgb(247, 172, 172);
+            padding: 3px;
+            border-radius: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+                <a href="#">Sobre</a>
+                <a href="#">Produtos</a>
+                <a href="#">Coisas</a>
+                <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quibusdam ad? Dolorum, rem veniam quasi accusamus eveniet nulla numquam explicabo, laudantium quibusdam voluptas labore laborum, adipisci a iure nobis officia!</p>
+                <aside>
+                    <p id="escritor">Artigo escrito por Mentiroso Compulsivo.</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p id="empresa"><a href="https://www.youtube.com/watch?v=399syDv0bBM" target="_blank" rel="external">Desenvolvido por Katakan Corp.</a></p>
+    </footer>
+</body>
+</html>
